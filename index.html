@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- used divs to organize the elemnts -->
+      <div class="title">
+        <p>Web Topics</p>
+        <div class="general-icon">
+          <button type="button" class="btn btn-outline-secondary">
+            <ion-icon name="moon-outline"></ion-icon
+            ><span class="button-text">Dark Mode</span>
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            <ion-icon name="heart-outline"></ion-icon
+            ><span class="button-text">Favorites</span>
+          </button>
+        </div>
+      </div>
+      <!-- to make the shap -->
+      <div class="triangles">
+        <div class="blue-triangle"></div>
+        <div class="green-triangle"></div>
+      </div>
+      <div class="welcome">
+        <h4>Welcome to our website!</h4>
+        <p>We have a new design that's fresh, modern, and easy to use.</p>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <input type="text" placeholder="Search the website..." />
+        <select name="sort" id="sort">
+          <option value="Defualt">Sort by: Defualt</option>
+        </select>
+        <select name="filter" id="filter">
+          <option value="Defualt">Filter by: Defualt</option>
+        </select>
+      </nav>
+      <p class="num-topic">"24"Web Topic Found</p>
+      <section>
+        <div class="card">
+          <img src="./images/html.png" alt="html" />
+          <div class="info">
+            <p>Web Development Languages</p>
+            <p class="language">HTML</p>
+            <p>Author: Sarah Smith</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/css.webp" alt="CSS" />
+          <div class="info">
+            <p>Web Development Languages</p>
+            <p class="language">CSS</p>
+            <p>Author: David Lee</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/javascript.jpg" alt="JavaScript" />
+          <div class="info">
+            <p>Web Development Languages</p>
+            <p class="language">JavaScript</p>
+            <p>Author: Emily Chin</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/jquery.png" alt="jQuery" />
+          <div class="info">
+            <p>Frontend Framework and Libraries</p>
+            <p class="language">jQuery</p>
+            <p>Author: John Johnson</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/angular.png" alt="Angular" />
+          <div class="info">
+            <p>Frontend Framework and Libraries</p>
+            <p class="language">Angular</p>
+            <p>Author: Jessica Davis</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/react.webp" alt="React" />
+          <div class="info">
+            <p>Frontend Framework and Libraries</p>
+            <p class="language">React</p>
+            <p>Author: Daniel Brown</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/vuejs.jpeg" alt="Vue.js" />
+          <div class="info">
+            <p>Frontend Framework and Libraries</p>
+            <p class="language">Vue.js</p>
+            <p>Author: Ava Jones</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/nodejs.webp" alt="Node.js" />
+          <div class="info">
+            <p>Backend Framework and Libraries</p>
+            <p class="language">Node.js</p>
+            <p>Author: Micheal Kim</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/expressjs.webp" alt="Express.js" />
+          <div class="info">
+            <p>Backend Framework and Libraries</p>
+            <p class="language">Express.js</p>
+            <p>Author: Sophia Rodrigues</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/ruby.jpeg" alt="Ruby on Rails" />
+          <div class="info">
+            <p>Backend Framework and Libraries</p>
+            <p class="language">Ruby on Rails</p>
+            <p>Author: William Lee</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/django.jpeg" alt="Django" />
+          <div class="info">
+            <p>Backend Framework and Libraries</p>
+            <p class="language">Django</p>
+            <p>Author: Olivia Martinez</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/flask.webp" alt="Flask" />
+          <div class="info">
+            <p>Backend Framework and Libraries</p>
+            <p class="language">Flask</p>
+            <p>Author: Ethan Thompson</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/sql.png" alt="SQL" />
+          <div class="info">
+            <p>Database and APIs</p>
+            <p class="language">SQL</p>
+            <p>Author: Madison Davis</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/nosql.png" alt="NoSQL" />
+          <div class="info">
+            <p>Database and APIs</p>
+            <p class="language">NoSQL</p>
+            <p>Author: Isabella Wilson</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/restapi.jpeg" alt="REST APIs" />
+          <div class="info">
+            <p>Database and APIs</p>
+            <p class="language">REST APIs</p>
+            <p>Author: Jacob Garcia</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

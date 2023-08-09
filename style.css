@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Nunito Sans;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.title p {
+    color: var(--brand-primary);
+    font-size: 13px;
+    font-weight: var(--bold-font);
+}
+
+.general-icon button {
+    padding: 3px ;
+    font-size: 12px;
+    font-weight: var(--regular-font);
+}
+
+
+.button-text {
+    display: inline;
+}
+
+
+.blue-triangle{
+    width: 0;
+    height: 0;
+    border-left: 100vw solid var(--brand-primary);
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+.green-triangle{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50vw solid var(--brand-secondary);
+    border-bottom: 50px solid transparent; 
+}
+
+.welcome{
+    text-align: center;
+}
+
+h4{
+    color: var(--brand-secondary);
+    font-weight: var(--bold-font);
+}
+
+/* .welcome p {
+    display: block;
+    text-align: left;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}    */
+
+
+main{
+    background-color: var(--bg_body);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    width: 95vw;
+    height: 60px;
+    margin: 0 auto;
+    box-shadow: 2px 0.5 black;
+    padding: 10px;
+}
+
+input{
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 95vw;
+}
+
+
+.num-topic{
+    font-weight: var(--bold-font);
+    font-size: 18px;
+    width: 95vw;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.card{
+    border-radius: 3%;
+    background-color: var(--bg_default);
+    width: 18%;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+img{
+    height: 50%;
+    border-top-left-radius: 3%;
+    border-top-right-radius:3%;
+    /* overflow: hidden; */
+}
+
+.language{
+    font-weight: var(--bold-font);  
+}
+
+.info{
+    margin: 5px;
+    font-size: 14px;
+}
+
+@media (max-width:768px){
+    .button-text{
+        display: none;
+    }
+    .welcome{
+        text-align: left;
+        margin-left: 20px;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 95vw;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    input{
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid black;
+        box-shadow: 2px 0.5 black;
+    }
+    .card{
+        border-radius: 3%;
+        background-color: var(--bg_default);
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
