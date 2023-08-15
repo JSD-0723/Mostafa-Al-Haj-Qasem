@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     margin: 1%;
+    /* height: 10%; */
 }
 
 .title p {
@@ -27,25 +28,25 @@
     display: inline;
 }
 
+.triangles{
+    height: 10%;
+}
 
 .blue-triangle{
-    width: 0;
-    height: 0;
     border-left: 100vw solid var(--brand-primary);
     border-right: 50px solid transparent;
-    border-bottom: 50px solid transparent;
+    border-bottom: 40px solid transparent;
 }
 
 .green-triangle{
-    width: 0;
-    height: 0;
     border-left: 50px solid transparent;
-    border-right: 50vw solid var(--brand-secondary);
-    border-bottom: 50px solid transparent; 
+    border-right: 100vw solid var(--brand-secondary);
+    border-bottom: 40px solid transparent; 
 }
 
 .welcome{
     text-align: center;
+    
 }
 
 h4{
