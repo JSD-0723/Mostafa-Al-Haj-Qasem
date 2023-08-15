@@ -34,11 +34,11 @@
       <div class="title">
         <p>Web Topics</p>
         <div class="general-icon">
-          <button type="button" class="btn btn-outline-secondary">
+          <button class="button">
             <ion-icon name="moon-outline"></ion-icon
             ><span class="button-text">Dark Mode</span>
           </button>
-          <button type="button" class="btn btn-outline-secondary">
+          <button class="button">
             <ion-icon name="heart-outline"></ion-icon
             ><span class="button-text">Favorites</span>
           </button>
@@ -57,12 +57,18 @@
     <main>
       <nav>
         <input type="text" placeholder="Search the website..." />
-        <select name="sort" id="sort">
-          <option value="Defualt">Sort by: Defualt</option>
-        </select>
-        <select name="filter" id="filter">
-          <option value="Defualt">Filter by: Defualt</option>
-        </select>
+        <div class="sort-list">
+          <label for="sort">Sort By</label>
+          <!-- <select name="sort" id="sort">
+            <option value="Defualt">Defualt</option> -->
+          </select>
+        </div>
+        <div class="filter-list">
+          <label for="sort">Filter By</label>
+          <!-- <select name="filter" id="filter">
+            <option value="Defualt">Defualt</option> -->
+          </select>
+        </div>
       </nav>
       <p class="num-topic">"24"Web Topic Found</p>
       <section>
