@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <title>Home Page</title>
     <link rel="stylesheet" href="variables.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,14 +26,14 @@
     <header>
       <!-- used divs to organize the elemnts -->
       <div class="title">
-        <p>Web Topics</p>
+        <h1>Web Topics</h1>
         <div class="general-icon">
           <button class="button">
             <ion-icon name="moon-outline"></ion-icon
             ><span class="button-text">Dark Mode</span>
           </button>
           <button class="button">
-            <ion-icon name="heart-outline"></ion-icon
+            <ion-icon name="heart-outline" ></ion-icon
             ><span class="button-text">Favorites</span>
           </button>
         </div>
@@ -56,14 +50,15 @@
     </header>
     <main>
       <nav>
+        <ion-icon class="search-icon" name="search-outline"></ion-icon>
         <input type="text" placeholder="Search the website..." />
-        <div class="sort-list">
+        <div class="sort-list down-list" >
           <label for="sort">Sort By</label>
           <select name="sort" id="sort">
             <option value="Defualt">Defualt</option>
           </select>
         </div>
-        <div class="filter-list">
+        <div class="filter-list down-list">
           <label for="sort">Filter By</label>
           <select name="filter" id="filter">
             <option value="Defualt">Defualt</option>
