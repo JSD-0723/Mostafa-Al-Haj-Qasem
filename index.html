@@ -28,12 +28,12 @@
       <div class="title">
         <h1>Web Topics</h1>
         <div class="general-icon">
-          <button class="button">
+          <button class="button" id="dark-mode-button">
             <ion-icon name="moon-outline"></ion-icon
             ><span class="button-text">Dark Mode</span>
           </button>
-          <button class="button">
-            <ion-icon name="heart-outline" ></ion-icon
+          <button class="button" id="favourite-button">
+            <ion-icon name="heart-outline"></ion-icon
             ><span class="button-text">Favorites</span>
           </button>
         </div>
@@ -52,142 +52,203 @@
       <nav>
         <ion-icon class="search-icon" name="search-outline"></ion-icon>
         <input type="text" placeholder="Search the website..." />
-        <div class="sort-list down-list" >
-          <label for="sort">Sort By</label>
-          <select name="sort" id="sort">
-            <option value="Defualt">Defualt</option>
-          </select>
-        </div>
-        <div class="filter-list down-list">
-          <label for="sort">Filter By</label>
-          <select name="filter" id="filter">
-            <option value="Defualt">Defualt</option>
-          </select>
+        <div class="search-criteria">
+          <div class="sort-list down-list">
+            <label for="sort">Sort By:</label>
+            <select name="sort" id="sort">
+              <option value="Defualt">Defualt</option>
+            </select>
+          </div>
+          <div class="filter-list down-list">
+            <label for="sort">Filter By:</label>
+            <select name="filter" id="filter">
+              <option value="Defualt">Defualt</option>
+            </select>
+          </div>
         </div>
       </nav>
       <p class="num-topic">"24"Web Topic Found</p>
       <section class="all-cards">
-        <div class="card">
-          <img src="./images/html.png" alt="html" />
-          <div class="info">
-            <p>Web Development Languages</p>
-            <p class="language">HTML</p>
-            <p>Author: Sarah Smith</p>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/html.png" alt="html" />
+            <div class="card-info">
+              <p class="language-category">Web Development Languages</p>
+              <h2 class="language">HTML</h2>
+              <p class="author-name">Author: Sarah Smith</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/css.webp" alt="CSS" />
-          <div class="info">
-            <p>Web Development Languages</p>
-            <p class="language">CSS</p>
-            <p>Author: David Lee</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/css.webp" alt="CSS" />
+            <div class="card-info">
+              <p class="language-category">Web Development Languages</p>
+              <h2 class="language">CSS</h2>
+              <p class="author-name">Author: David Lee</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/javascript.jpg" alt="JavaScript" />
-          <div class="info">
-            <p>Web Development Languages</p>
-            <p class="language">JavaScript</p>
-            <p>Author: Emily Chin</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/javascript.jpg" alt="JavaScript" />
+            <div class="card-info">
+              <p class="language-category">Web Development Languages</p>
+              <h2 class="language">JavaScript</h2>
+              <p class="author-name">Author: Emily Chin</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/jquery.png" alt="jQuery" />
-          <div class="info">
-            <p>Frontend Framework and Libraries</p>
-            <p class="language">jQuery</p>
-            <p>Author: John Johnson</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/jquery.png" alt="jQuery" />
+            <div class="card-info">
+              <p class="language-category">Frontend Framework and Libraries</p>
+              <h2 class="language">jQuery</h2>
+              <p class="author-name">Author: John Johnson</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/angular.png" alt="Angular" />
-          <div class="info">
-            <p>Frontend Framework and Libraries</p>
-            <p class="language">Angular</p>
-            <p>Author: Jessica Davis</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/angular.png" alt="Angular" />
+            <div class="card-info">
+              <p class="language-category">Frontend Framework and Libraries</p>
+              <h2 class="language">Angular</h2>
+              <p class="author-name">Author: Jessica Davis</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/react.webp" alt="React" />
-          <div class="info">
-            <p>Frontend Framework and Libraries</p>
-            <p class="language">React</p>
-            <p>Author: Daniel Brown</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/react.webp" alt="React" />
+            <div class="card-info">
+              <p class="language-category">Frontend Framework and Libraries</p>
+              <h2 class="language">React</h2>
+              <p class="author-name">Author: Daniel Brown</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/vuejs.jpeg" alt="Vue.js" />
-          <div class="info">
-            <p>Frontend Framework and Libraries</p>
-            <p class="language">Vue.js</p>
-            <p>Author: Ava Jones</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/vuejs.jpeg" alt="Vue.js" />
+            <div class="card-info">
+              <p class="language-category">Frontend Framework and Libraries</p>
+              <h2 class="language">Vue.js</h2>
+              <p class="author-name">Author: Ava Jones</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/nodejs.webp" alt="Node.js" />
-          <div class="info">
-            <p>Backend Framework and Libraries</p>
-            <p class="language">Node.js</p>
-            <p>Author: Micheal Kim</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/nodejs.webp" alt="Node.js" />
+            <div class="card-info">
+              <p class="language-category">Backend Framework and Libraries</p>
+              <h2 class="language">Node.js</h2>
+              <p class="author-name">Author: Micheal Kim</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/expressjs.webp" alt="Express.js" />
-          <div class="info">
-            <p>Backend Framework and Libraries</p>
-            <p class="language">Express.js</p>
-            <p>Author: Sophia Rodrigues</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/expressjs.webp" alt="Express.js" />
+            <div class="card-info">
+              <p class="language-category">Backend Framework and Libraries</p>
+              <h2 class="language">Express.js</h2>
+              <p class="author-name">Author: Sophia Rodrigues</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/ruby.jpeg" alt="Ruby on Rails" />
-          <div class="info">
-            <p>Backend Framework and Libraries</p>
-            <p class="language">Ruby on Rails</p>
-            <p>Author: William Lee</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/ruby.jpeg" alt="Ruby on Rails" />
+            <div class="card-info">
+              <p class="language-category">Backend Framework and Libraries</p>
+              <h2 class="language">Ruby on Rails</h2>
+              <p class="author-name">Author: William Lee</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/django.jpeg" alt="Django" />
-          <div class="info">
-            <p>Backend Framework and Libraries</p>
-            <p class="language">Django</p>
-            <p>Author: Olivia Martinez</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/django.jpeg" alt="Django" />
+            <div class="card-info">
+              <p class="language-category">Backend Framework and Libraries</p>
+              <h2 class="language">Django</h2>
+              <p class="author-name">Author: Olivia Martinez</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/flask.webp" alt="Flask" />
-          <div class="info">
-            <p>Backend Framework and Libraries</p>
-            <p class="language">Flask</p>
-            <p>Author: Ethan Thompson</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/flask.webp" alt="Flask" />
+            <div class="card-info">
+              <p class="language-category">Backend Framework and Libraries</p>
+              <h2 class="language">Flask</h2>
+              <p class="author-name">Author: Ethan Thompson</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/sql.png" alt="SQL" />
-          <div class="info">
-            <p>Database and APIs</p>
-            <p class="language">SQL</p>
-            <p>Author: Madison Davis</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/sql.png" alt="SQL" />
+            <div class="card-info">
+              <p class="language-category">Database and APIs</p>
+              <h2 class="language">SQL</h2>
+              <p class="author-name">Author: Madison Davis</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/nosql.png" alt="NoSQL" />
-          <div class="info">
-            <p>Database and APIs</p>
-            <p class="language">NoSQL</p>
-            <p>Author: Isabella Wilson</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/nosql.png" alt="NoSQL" />
+            <div class="card-info">
+              <p class="language-category">Database and APIs</p>
+              <h2 class="language">NoSQL</h2>
+              <p class="author-name">Author: Isabella Wilson</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./images/restapi.jpeg" alt="REST APIs" />
-          <div class="info">
-            <p>Database and APIs</p>
-            <p class="language">REST APIs</p>
-            <p>Author: Jacob Garcia</p>
+        </a>
+        <a href="#" class="anchor-card">
+          <div class="card">
+            <img src="./images/restapi.jpeg" alt="REST APIs" />
+            <div class="card-info">
+              <p class="language-category">Database and APIs</p>
+              <h2 class="language">REST APIs</h2>
+              <p class="author-name">Author: Jacob Garcia</p>
+            </div>
+          </div>
+        </a>
+        <div class="favourite-topics ">
+          <h5>My Favourite Topics</h5>
+          <div class="favourite-courses">
+            <a href="#" class="anchor-card">
+              <div class="card">
+                <img src="./images/react.webp" alt="React" />
+                <div class="card-info">
+                  <h2 class="language">React</h2>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="anchor-card">
+              <div class="card">
+                <img src="./images/angular.png" alt="Angular" />
+                <div class="card-info">
+                  <h2 class="language">Angular</h2>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <h5>
+        Developed with
+        <ion-icon class="red-heart" name="heart"></ion-icon>
+        &copy; 2023
+      </h5>
+    </footer>
   </body>
+  <script src="script.js"></script>
 </html>
