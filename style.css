@@ -339,16 +339,20 @@ footer{
     }
 }
 
-.language-details{
+.black-container{
     background-color: var(--body-text);
     color: var(--bg_default);
+    width: 100vw;
+    height: 25vh;
+}
+
+.language-details{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    width: 100vw;
-    height: 220px;
-    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .language-description{
@@ -360,8 +364,8 @@ footer{
 }
 
 .language-definition{
-    margin-top: 30px;
-    font-size: 12px;
+    margin-top: 20px;
+    font-size: 15px;
 }
 
 h2{
@@ -369,20 +373,18 @@ h2{
 }
 
 .language-card{
-    position: relative;
-    left: 20px;
-    top: 70px;
     border: 1px solid var(--lines-color);
     box-shadow: 2px 2px 1px rgba(215, 213, 213, 0.5);
     background-color: var(--bg_default);
-    margin-top: 20px;
+    margin-top: 170px;
+    margin-left: 100px;
     color:var(--body-text) ;
     font-size: 12px;
     font-weight: var(--bold-font);
 }
 
 .language-card img{
-    width: 250px;
+    width: 270px;
     height: 170px;
 }
 
