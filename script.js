@@ -28,3 +28,5 @@ favouriteButton.addEventListener("click", function () {
   }
   isVisible = !isVisible;
 });
+
+

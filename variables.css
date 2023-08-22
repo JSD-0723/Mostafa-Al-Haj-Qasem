@@ -9,5 +9,8 @@
     --extra-light-font : 200;
     --regular-font : 400;
     --bold-font : 700;
+    --fixed-black: #333333;
+    --fixed-white: #FFFFFF;
+    --fixed-grey: #DDDDDD;
 
 }
