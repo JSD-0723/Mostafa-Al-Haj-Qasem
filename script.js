@@ -24,9 +24,7 @@ favouriteButton.addEventListener("click", function () {
   if (isVisible) {
     favouriteTopic.style.display = "none";
   } else {
-    favouriteTopic.style.display = "inline";
+    favouriteTopic.style.display = "block";
   }
   isVisible = !isVisible;
 });
-
-

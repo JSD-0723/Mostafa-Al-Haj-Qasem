@@ -25,7 +25,7 @@
   <body>
     <header>
       <!-- used divs to organize the elemnts -->
-      <div class="title">
+      <div class="title continares-width">
         <h1>Web Topics</h1>
         <div class="general-icon">
           <button class="button" id="dark-mode-button">
@@ -51,172 +51,283 @@
       </div>
     </header>
     <main>
-      <nav class="search-bar">
+      <nav class="search-bar continares-width box-shadow">
         <ion-icon class="search-icon" name="search-outline"></ion-icon>
         <input type="text" placeholder="Search the website..." />
         <div class="search-criteria">
           <div class="sort-list down-list">
             <label for="sort">Sort By:</label>
             <select name="sort" id="sort">
-              <option value="Defualt">Defualt</option>
+              <option value="Default">Default</option>
             </select>
           </div>
           <div class="filter-list down-list">
             <label for="sort">Filter By:</label>
             <select name="filter" id="filter">
-              <option value="Defualt">Defualt</option>
+              <option value="Default">Default</option>
             </select>
           </div>
         </div>
       </nav>
-      <p class="num-topic">"24"Web Topic Found</p>
-      <section class="all-cards">
+      <p class="num-topic continares-width">"24"Web Topic Found</p>
+      <section class="all-cards continares-width">
         <a href="detail.html" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/html.png" alt="html" />
             <div class="card-info">
-              <p class="language-category">Web Development Languages</p>
-              <h2 class="language">HTML</h2>
+              <p class="language-category text-overflow">
+                Web Development Languages
+              </p>
+              <h2 class="language text-overflow">HTML</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Sarah Smith</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/css.webp" alt="CSS" />
             <div class="card-info">
-              <p class="language-category">Web Development Languages</p>
-              <h2 class="language">CSS</h2>
+              <p class="language-category text-overflow">
+                Web Development Languages
+              </p>
+              <h2 class="language text-overflow">CSS</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: David Lee</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/javascript.jpg" alt="JavaScript" />
             <div class="card-info">
-              <p class="language-category">Web Development Languages</p>
-              <h2 class="language">JavaScript</h2>
+              <p class="language-category text-overflow">
+                Web Development Languages
+              </p>
+              <h2 class="language text-overflow">JavaScript</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Emily Chin</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/jquery.png" alt="jQuery" />
             <div class="card-info">
               <p class="language-category">Frontend Framework and Libraries</p>
               <h2 class="language">jQuery</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: John Johnson</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/angular.png" alt="Angular" />
             <div class="card-info">
               <p class="language-category">Frontend Framework and Libraries</p>
               <h2 class="language">Angular</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Jessica Davis</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/react.webp" alt="React" />
             <div class="card-info">
               <p class="language-category">Frontend Framework and Libraries</p>
               <h2 class="language">React</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Daniel Brown</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/vuejs.jpeg" alt="Vue.js" />
             <div class="card-info">
               <p class="language-category">Frontend Framework and Libraries</p>
               <h2 class="language">Vue.js</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Ava Jones</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/nodejs.webp" alt="Node.js" />
             <div class="card-info">
               <p class="language-category">Backend Framework and Libraries</p>
               <h2 class="language">Node.js</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Micheal Kim</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/expressjs.webp" alt="Express.js" />
             <div class="card-info">
               <p class="language-category">Backend Framework and Libraries</p>
               <h2 class="language">Express.js</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Sophia Rodrigues</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/ruby.jpeg" alt="Ruby on Rails" />
             <div class="card-info">
               <p class="language-category">Backend Framework and Libraries</p>
               <h2 class="language">Ruby on Rails</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: William Lee</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/django.jpeg" alt="Django" />
             <div class="card-info">
               <p class="language-category">Backend Framework and Libraries</p>
               <h2 class="language">Django</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Olivia Martinez</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/flask.webp" alt="Flask" />
             <div class="card-info">
               <p class="language-category">Backend Framework and Libraries</p>
               <h2 class="language">Flask</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Ethan Thompson</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/sql.png" alt="SQL" />
             <div class="card-info">
               <p class="language-category">Database and APIs</p>
               <h2 class="language">SQL</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Madison Davis</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/nosql.png" alt="NoSQL" />
             <div class="card-info">
               <p class="language-category">Database and APIs</p>
               <h2 class="language">NoSQL</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Isabella Wilson</p>
             </div>
           </div>
         </a>
         <a href="#" class="anchor-card">
-          <div class="card">
+          <div class="card box-shadow">
             <img src="./images/restapi.jpeg" alt="REST APIs" />
             <div class="card-info">
               <p class="language-category">Database and APIs</p>
               <h2 class="language">REST APIs</h2>
+              <div class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
               <p class="author-name">Author: Jacob Garcia</p>
             </div>
           </div>
@@ -227,16 +338,30 @@
             <a href="#" class="anchor-card">
               <div class="card">
                 <img src="./images/react.webp" alt="React" />
-                <div class="card-info">
+                <div class="card-info favorite-card-info">
                   <h2 class="language">React</h2>
+                  <div class="star-icons favorite-card-info">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
                 </div>
               </div>
             </a>
             <a href="#" class="anchor-card">
               <div class="card">
                 <img src="./images/angular.png" alt="Angular" />
-                <div class="card-info">
+                <div class="card-info favorite-card-info">
                   <h2 class="language">Angular</h2>
+                  <div class="star-icons favorite-card-info">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
                 </div>
               </div>
             </a>

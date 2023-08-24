@@ -25,7 +25,7 @@
   <body>
     <header>
       <!-- used divs to organize the elemnts -->
-      <div class="title">
+      <div class="title continares-width">
         <h1>Web Topics</h1>
         <div class="general-icon">
           <button class="button" id="dark-mode-button">
@@ -53,42 +53,96 @@
     <main>
       <section>
         <div class="black-container">
-          <div class="language-details">
-            <div class="language-description">
-                <p class="category">Web Development Languages</p>
-                <h2>HTML</h2>
-                <p class="language-definition">
-                  HTML (Hypertext Markup Language) is the standard markup language for</br>
-                  creating web pages and other information that can be diplayed in a web</br>
-                  browser.It provides a structure for content and defines how it should be </br>
-                  displayed on a web page, including text, images, and multimedia. HTML is </br>
-                  essential for creating static web pages and is a foundational technology </br>
-                  for the World Wide Web.
-                </p>
+          <div class="language-details main-continaers-content">
+            <div class="language-description definetion-and-topic-containers">
+              <p class="category">Web Development Languages</p>
+              <h2>HTML</h2>
+              <div class="star-icons favorite-card-info">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+              <p class="language-definition">
+                HTML (Hypertext Markup Language) is the standard markup language
+                for creating web pages and other information that can be
+                diplayed in a web browser.It provides a structure for content
+                and defines how it should be displayed on a web page, including
+                text, images, and multimedia. HTML is essential for creating
+                static web pages and is a foundational technology for the World
+                Wide Web.
+              </p>
             </div>
             <div class="language-card">
-                <img src="./images/html.png" alt="HTML">
-                <div class="language-author favorite-lang">
-                  <p><span class="lang-name">HTML </span>by <span class="author-name">Sarah Smith</span></p>
-                </div>
-                <div class="favorite-request favorite-lang">
-                    <p>Interested about this topic?</p>
-                    <button class="favorite-button">Add to Favorites<ion-icon name="heart-outline"></ion-icon
-                        ></button>
-                    <p class="credit">Unlimited Credits</p>
-                </div>
+              <img
+                class="full-width-content"
+                src="./images/html.png"
+                alt="HTML"
+              />
+              <div class="language-author favorite-lang">
+                <p>
+                  <span class="lang-name">HTML </span>by
+                  <span class="author-name">Sarah Smith</span>
+                </p>
+              </div>
+              <div class="favorite-request favorite-lang">
+                <p>Interested about this topic?</p>
+                <button class="favorite-button full-width-content">
+                  Add to Favorites<ion-icon name="heart-outline"></ion-icon>
+                </button>
+                <p class="credit">Unlimited Credits</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="topic-container">
-          <div class="course-topic">
+        <div class="topic-container main-continaers-content">
+          <div
+            class="course-topic definetion-and-topic-containers full-width-content"
+          >
             <h3>HTML Sub Topics</h3>
-            <p><ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon> HTML syntax and structure</p>
-            <p><ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon> HTML elements and attributes</p>
-            <p><ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon> HTML forms and input elements</p>
-            <p><ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon> HTML tables and lists</p>
-            <p><ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon> HTML multimedia elements (audio, video, images)</p>
-            <p><ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon> HTML accessiblity and semantic markup</p>
+            <p>
+              <ion-icon
+                class="check-icon"
+                name="checkmark-circle-outline"
+              ></ion-icon>
+              HTML syntax and structure
+            </p>
+            <p>
+              <ion-icon
+                class="check-icon"
+                name="checkmark-circle-outline"
+              ></ion-icon>
+              HTML elements and attributes
+            </p>
+            <p>
+              <ion-icon
+                class="check-icon"
+                name="checkmark-circle-outline"
+              ></ion-icon>
+              HTML forms and input elements
+            </p>
+            <p>
+              <ion-icon
+                class="check-icon"
+                name="checkmark-circle-outline"
+              ></ion-icon>
+              HTML tables and lists
+            </p>
+            <p>
+              <ion-icon
+                class="check-icon"
+                name="checkmark-circle-outline"
+              ></ion-icon>
+              HTML multimedia elements (audio, video, images)
+            </p>
+            <p>
+              <ion-icon
+                class="check-icon"
+                name="checkmark-circle-outline"
+              ></ion-icon>
+              HTML accessiblity and semantic markup
+            </p>
           </div>
         </div>
         <div class="favourite-topics">
@@ -97,16 +151,30 @@
             <a href="#" class="anchor-card">
               <div class="card">
                 <img src="./images/react.webp" alt="React" />
-                <div class="card-info">
+                <div class="card-info favorite-card-info">
                   <h2 class="language">React</h2>
+                  <div class="star-icons favorite-card-info">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
                 </div>
               </div>
             </a>
             <a href="#" class="anchor-card">
               <div class="card">
                 <img src="./images/angular.png" alt="Angular" />
-                <div class="card-info">
+                <div class="card-info favorite-card-info">
                   <h2 class="language">Angular</h2>
+                  <div class="star-icons favorite-card-info">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
                 </div>
               </div>
             </a>
