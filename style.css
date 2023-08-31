@@ -10,18 +10,18 @@ header{
 }
 
 .continares-width{
-    width: 90vw;
+    width: 93vw;
 }
 
 .box-shadow{
-    box-shadow: 3px 3px 15px -3px var(--lines-color);
+    box-shadow: 0px 0px 15px -3px var(--lines-color);
 }
 
 .title{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 15px 0 15px 0;
+    padding: 17px 0;
     align-items: center;
 }
 
@@ -40,13 +40,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 15px;
+    font-size: .9rem;
     color: var(--body-text);   
-    width: 110px;
-    padding: 5px 0;
+    padding: 5px 11px;
     border-radius: 4px;
     background-color: var(--bg_default);
     border: 1px solid var(--lines-color);
+    padding-inline: 11px;
+    gap: 6px;
 }
 
 .triangles{
@@ -97,7 +98,7 @@ main{
 }   
 
 input{
-    width: 65%;
+    width: 75%;
     background-color: var(--bg_default);
     border-radius: 7px 0 0 7px;
     border: none;
@@ -120,7 +121,7 @@ input::placeholder{
 
 .search-criteria{
     display: flex;
-    width: 35%;
+    width: 25%;
     gap: 1px;
     box-sizing: border-box;
 }
@@ -188,18 +189,20 @@ img{
 .language{
     font-size: 16px;
     font-weight: var(--bold-font);  
+    overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2; /* Number of lines to show */
     -webkit-box-orient: vertical;
+}
+
+.dynamic-tolerance{
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .language-category{
     font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .card-info{
@@ -368,7 +371,6 @@ margin: 10px;
 .course-topic{
     background-color: var(--bg_default);
     color: var(--body-text);
-    width: 65%;
     display: flex;
     flex-direction: column;
     gap: 1px;
