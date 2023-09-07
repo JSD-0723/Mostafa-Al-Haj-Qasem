@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline' https://apis.google.com"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="variables.css" />
+    <link rel="icon" href="icons8-favicon-50.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,7 +76,7 @@
       </nav>
       <p class="num-topic continares-width">"24"Web Topic Found</p>
       <section class="all-cards continares-width">
-        <a href="detail.html" class="anchor-card">
+        <!-- <a href="detail.html" class="anchor-card">
           <div class="card box-shadow">
             <img src="./images/html.png" alt="html" />
             <div class="card-info">
@@ -89,8 +94,8 @@
               <p class="author-name">Author: Sarah Smith</p>
             </div>
           </div>
-        </a>
-        <a href="#" class="anchor-card">
+        </a> -->
+        <!-- <a href="#" class="anchor-card">
           <div class="card box-shadow">
             <img src="./images/css.webp" alt="CSS" />
             <div class="card-info">
@@ -333,7 +338,7 @@
               <p class="author-name">Author: Jacob Garcia</p>
             </div>
           </div>
-        </a>
+        </a> -->
         <div class="favourite-topics">
           <h5>My Favourite Topics</h5>
           <div class="favourite-courses">
@@ -378,6 +383,6 @@
         &copy; 2023
       </h5>
     </footer>
+    <script src="main.js" type="module"></script>
   </body>
-  <script src="script.js"></script>
 </html>

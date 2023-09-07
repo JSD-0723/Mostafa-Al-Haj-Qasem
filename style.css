@@ -34,6 +34,7 @@ header{
 .general-icon{
     display: flex;
     gap: 5px;
+    color: var(--body-text);
 }
 
 .button{
