@@ -1,35 +1,11 @@
+import { getItem } from "./loacalStorage.js";
 import { darkMode, lightMode } from "./darkMode.js";
-import { getMode } from "./loacalStorage.js";
-// import { fetchData } from "./fetchData.js";
-// import { createCard } from "./cardCreator.js";
+import { createCard } from "./cardCreator.js";
 
-fetch("https://tap-web-1.herokuapp.com/topics/list")
-  .then((res) => {
-    return res.json();
-  })
-  .then((data) => {})
-  .catch((error) =>
-    console.error("Something went wrong. Web topics failed to load.", error)
-  );
-export function createCard(data) {
-  const cardContainer = document.getElementsByClassName("all-cards");
-  data.forEach((element) => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-    const image = document.createElement("img");
-    image.src = element.image;
-    const category = document.createElement("p");
-    category.textContent = element.category;
-    const topic = document.createElement("p");
-    topic.textContent = element.topic;
-    card.appendChild(image);
-    card.appendChild(category);
-    card.appendChild(topic);
-    cardContainer.appendChild(card);
-  });
-}
+createCard();
 
-let modeValue = getMode();
+let modeValue = getItem();
+
 if (modeValue === "dark") {
   darkMode();
 } else {
@@ -46,6 +22,8 @@ darkModeButton.addEventListener("click", function () {
   }
   isChanged = !isChanged;
 });
+
+console.log(localStorage);
 
 // const favouriteButton = document.getElementById("favourite-button");
 // const favouriteTopic = document.querySelector(".favourite-topics");

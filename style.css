@@ -160,7 +160,23 @@ select{
     margin-top: 35px;
 }
 
-.all-cards{
+#loading-indicator{
+    display: none;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#all-cards{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(220px, 1fr));
     gap: 25px;
@@ -176,6 +192,7 @@ select{
 .card{
     border-radius: 3%;
     height: 100%;
+    padding: 0;
     background-color: var(--bg_default);
 }
 

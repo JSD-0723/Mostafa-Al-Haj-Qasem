@@ -1,17 +1,42 @@
-export function createCard(data) {
-  const cardContainer = document.getElementsByClassName("all-cards");
-  data.forEach((element) => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-    const image = document.createElement("img");
-    image.src = element.image;
-    const category = document.createElement("p");
-    category.textContent = element.category;
-    const topic = document.createElement("p");
-    topic.textContent = element.topic;
-    card.appendChild(image);
-    card.appendChild(category);
-    card.appendChild(topic);
-    cardContainer.appendChild(card);
-  });
+import { fetchData } from "./fetchData.js";
+
+const cardContainer = document.getElementById("all-cards");
+const loading_indicator = document.getElementById("loading-indicator");
+export async function createCard() {
+  try {
+    loading_indicator.style.display = "block";
+    const data = await fetchData();
+    loading_indicator.style.display = "none";
+
+    data.forEach((item) => {
+      const card = createCardElement(item);
+      cardContainer.appendChild(card);
+    });
+  } catch (error) {
+    console.error("Error creating cards:", error);
+  }
+
+  function createCardElement(item) {
+    const card = document.createElement("a");
+    card.classList.add("anchor-card");
+    card.innerHTML = `
+    <div class="card box-shadow">
+      <img src=${item.image} alt=${item.title} />
+      <div class="card-info">
+        <p class="language-category dynamic-tolerance">${item.category}</p>
+        <h2 class="language">${item.topic}</h2>
+        <div class="star-icons">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+        <p class="author-name">Author: ${item.name}</p>
+      </div>
+    </div>
+  `;
+
+    return card;
+  }
 }

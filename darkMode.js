@@ -1,4 +1,4 @@
-import { saveMode } from "./loacalStorage.js";
+import { setItem } from "./loacalStorage.js";
 
 const root = document.documentElement;
 
@@ -9,7 +9,7 @@ export function darkMode() {
   root.style.setProperty("--body-text", "#333333");
   updateTextMode("Dark Mode");
   updateIconeMode("moon-outline");
-  saveMode("dark");
+  setItem("dark");
 }
 export function lightMode() {
   root.style.setProperty("--bg_default", "#1A1A1A");
@@ -18,7 +18,7 @@ export function lightMode() {
   root.style.setProperty("--body-text", "#EDEDED");
   updateTextMode("Light Mode");
   updateIconeMode("sunny-outline");
-  saveMode("light");
+  setItem("light");
 }
 
 function updateTextMode(text) {
