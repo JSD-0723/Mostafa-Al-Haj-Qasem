@@ -1,8 +1,11 @@
 import { getItem } from "./loacalStorage.js";
 import { darkMode, lightMode } from "./darkMode.js";
 import { createCard } from "./cardCreator.js";
+// import { searchTopic } from "./searching.js";
 
 createCard();
+console.log(cards);
+// searchTopic();
 
 let modeValue = getItem();
 

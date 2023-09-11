@@ -4,14 +4,14 @@ const cardContainer = document.getElementById("all-cards");
 const loading_indicator = document.getElementById("loading-indicator");
 export async function createCard() {
   try {
+    //loading indicator shown
     loading_indicator.style.display = "block";
     const data = await fetchData();
+    //loading indicator disappear
     loading_indicator.style.display = "none";
 
-    data.forEach((item) => {
-      const card = createCardElement(item);
-      cardContainer.appendChild(card);
-    });
+    const cards = data.map((item) => createCardElement(item));
+    cards.forEach((card) => cardContainer.appendChild(card));
   } catch (error) {
     console.error("Error creating cards:", error);
   }
@@ -21,7 +21,7 @@ export async function createCard() {
     card.classList.add("anchor-card");
     card.innerHTML = `
     <div class="card box-shadow">
-      <img src=${item.image} alt=${item.title} />
+      <img src="images/${item.image}" alt=${item.title} />
       <div class="card-info">
         <p class="language-category dynamic-tolerance">${item.category}</p>
         <h2 class="language">${item.topic}</h2>
