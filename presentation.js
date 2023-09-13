@@ -1,5 +1,3 @@
-import { loadCards } from "./fetchData.js";
-
 const cardContainer = document.getElementsByClassName("all-cards");
 
 export function renderCards(cards) {
@@ -7,7 +5,7 @@ export function renderCards(cards) {
   const card = document.getElementById("single-card");
   cards.forEach((item) => {
     cardHTML += `
-    <a href="detail.html?${item.id}" class="anchor-card">
+    <a href="detail.html?id=${item.id}" class="anchor-card">
         <div class="card box-shadow">
           <img src="images/${item.image}" alt='${item.topic}' />
           <div class="card-info">

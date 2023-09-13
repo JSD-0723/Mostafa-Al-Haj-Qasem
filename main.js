@@ -1,6 +1,6 @@
 import { debounce } from "./asyncutiles.js";
 import { sortCards, filterCards } from "./cardsUtiles.js";
-import { loadCards } from "./fetchData.js";
+import { loadCards, loadCardDetails } from "./fetchData.js";
 import {
   filtering,
   renderCards,
@@ -12,6 +12,7 @@ let cards = [];
 let searchTerm = ``;
 let sortBy = ``;
 let filterBy = ``;
+let cardDetails = [];
 
 const loading_indicator = document.getElementById("loading-indicator");
 
@@ -59,8 +60,14 @@ filtering(async (value) => {
   renderCards(filterCards(filterBy, cards));
 });
 
+async function initDetail() {
+  cardDetails = await loadCardDetails();
+  renderCarddetails(cardDetails);
+}
+
 init();
 presentOption();
+initDetail();
 // let modeValue = getItem();
 
 // if (modeValue === "dark") {
