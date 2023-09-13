@@ -177,7 +177,7 @@ select{
     100% { transform: rotate(360deg); }
   }
 
-#all-cards{
+.all-cards{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(220px, 1fr));
     gap: 25px;
@@ -192,7 +192,7 @@ select{
 
 .card{
     border-radius: 3%;
-    height: 100%;
+    height: 250px;
     padding: 0;
     background-color: var(--bg_default);
 }
