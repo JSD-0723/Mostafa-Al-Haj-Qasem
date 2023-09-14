@@ -1,3 +1,5 @@
+import { getItem } from "./loacalStorage.js";
+import { darkMode, lightMode } from "./darkMode.js";
 import { debounce } from "./asyncutiles.js";
 import { sortCards, filterCards } from "./cardsUtiles.js";
 import { loadCards } from "./fetchData.js";
@@ -62,33 +64,35 @@ filtering(async (value) => {
 init();
 presentOption();
 
-// let modeValue = getItem();
+let modeValue = getItem();
 
-// if (modeValue === "dark") {
-//   darkMode();
-// } else {
-//   lightMode();
-// }
+if (modeValue === "dark") {
+  darkMode();
+} else {
+  lightMode();
+}
 
-// const darkModeButton = document.getElementById("dark-mode-button");
-// let isChanged = false;
-// darkModeButton.addEventListener("click", function () {
-//   if (isChanged) {
-//     darkMode();
-//   } else {
-//     lightMode();
-//   }
-//   isChanged = !isChanged;
-// });
+const darkModeButton = document.getElementById("dark-mode-button");
+let isChanged = false;
+darkModeButton.addEventListener("click", function () {
+  if (isChanged) {
+    darkMode();
+  } else {
+    lightMode();
+  }
+  isChanged = !isChanged;
+});
 
-// const favouriteButton = document.getElementById("favourite-button");
-// const favouriteTopic = document.querySelector(".favourite-topics");
-// let isVisible = false;
-// favouriteButton.addEventListener("click", function () {
-//   if (isVisible) {
-//     favouriteTopic.style.display = "none";
-//   } else {
-//     favouriteTopic.style.display = "block";
-//   }
-//   isVisible = !isVisible;
-// });
+const favouriteButton = document.getElementById("favourite-button");
+const favouriteTopic = document.querySelector(".favourite-topics");
+let isVisible = false;
+favouriteButton.addEventListener("click", function () {
+  if (isVisible) {
+    favouriteTopic.style.display = "none";
+  } else {
+    favouriteTopic.style.display = "block";
+  }
+  isVisible = !isVisible;
+});
+
+console.log(getItem());

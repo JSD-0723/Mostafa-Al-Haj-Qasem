@@ -1,24 +1,5 @@
-const myKeyValue = window.location.search;
-const urlParams = new URLSearchParams(myKeyValue);
-const itemId = urlParams.get("id");
-
-let cardDetails = [];
-const loading_indicator = document.getElementById("loading-indicator");
-
-const apiUrl = `https://tap-web-1.herokuapp.com/topics/details/${itemId}`;
-export const loadCardDetails = async () => {
-  let res = await fetch(apiUrl);
-  return await res.json();
-};
-
-console.log(loadCardDetails());
-
 export function renderDetails(cardDetails) {
   let cardDetailHTML = ``;
-  let subtopicsHTML = ``;
-  let subTopics = cardDetails.subTopics;
-  console.log(subTopics);
-  const listOfSubtopics = document.getElementById("sub-topics-list");
   const cardDetail = document.getElementById("detail-container");
   cardDetailHTML += `<div class="black-container">
           <div class="language-details main-width-percentage">
@@ -64,6 +45,13 @@ export function renderDetails(cardDetails) {
               <h3>${cardDetails.topic} Sub Topics</h3>
   `;
   cardDetail.innerHTML = cardDetailHTML;
+}
+
+export function renderSubTopics(cardDetails) {
+  let subTopics = cardDetails.subtopics;
+  const subTopicsList = document.getElementById("sub-topics-list");
+  console.log(subTopics);
+  let subtopicsHTML = ``;
   subTopics.forEach((element) => {
     subtopicsHTML += `
                 <li>
@@ -72,19 +60,8 @@ export function renderDetails(cardDetails) {
                     name="checkmark-circle-outline"
                   ></ion-icon>
                   ${element}
-                </li>
-              })
-            </div>
-          </div>`;
+                </li>`;
+    console.log(subtopicsHTML);
   });
-  listOfSubtopics.innerHTML = subtopicsHTML;
+  subTopicsList.innerHTML = subtopicsHTML;
 }
-
-async function initDetail() {
-  loading_indicator.style.display = "block";
-  cardDetails = await loadCardDetails();
-  loading_indicator.style.display = "none";
-  renderDetails(cardDetails);
-}
-
-initDetail();
