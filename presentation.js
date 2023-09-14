@@ -2,7 +2,6 @@ const cardContainer = document.getElementsByClassName("all-cards");
 
 export function renderCards(cards) {
   let cardHTML = ``;
-  const card = document.getElementById("single-card");
   cards.forEach((item) => {
     cardHTML += `
     <a href="detail.html?id=${item.id}" class="anchor-card">
@@ -23,8 +22,7 @@ export function renderCards(cards) {
         </div>
         </a>`;
   });
-  card.innerHTML = cardHTML;
-  cardContainer[0].appendChild(card);
+  cardContainer[0].innerHTML = cardHTML;
 }
 
 export function searchTopic(callBack) {
@@ -58,4 +56,3 @@ export function filtering(callBack) {
     callBack(e.target.value);
   });
 }
-
